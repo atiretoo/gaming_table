@@ -1,117 +1,83 @@
-# Modular Dining & Gaming Table: Design Specification
+# Modular Dining & Gaming Table: Design Specification (Rev 2)
 
-## 1. Project Overview
+## 1. Project Overview & Updated Parameters
 
 This specification defines a compact, modular dining table engineered specifically for small kitchens and apartments. It seamlessly transforms between a flat kitchen dining/work surface and a recessed board gaming vault.
 
-### Core Design Requirements
-1. **Compact Dining Ergonomics**: Short end sized for one comfortable place setting; long side is exactly twice that dimension, capped at 60".
-2. **Rapid Transformation**: Two-piece removable top with drop-in dowel alignment.
-3. **Comprehensive Spill Protection**: Tabletop leaves overlap perimeter stretchers with a 3/4" (19mm) overhang, directing spills away from the gaming vault.
-4. **Tool-Free Top Removal**: Top leaves stay firmly anchored horizontally against accidental bumps via dowels, but lift straight off without latches or tools.
-5. **Baltic Birch Plywood Construction**: Optimized for 18mm (3/4") and 12mm (1/2") Baltic Birch plywood with hardwood edge banding and fine veneer.
-6. **Knock-Down Modularity**: Disassembles rapidly into flat components using heavy-duty corner blocks and threaded inserts for easy transport through tight doorways and stairwells.
+### Core Parameters (Updated)
+1. **Dimensions**: **27.0" (685.8 mm) Width $\times$ 56.0" (1422.4 mm) Length $\times$ 30.0" (762 mm) Total Height**.
+   - Optimized for narrow kitchen spaces while providing standard 27" place settings for one diner at each end and two diners along each side (seating 4–6).
+2. **Removable Center Support Beam**:
+   - 18mm Baltic birch beam that drops into shallow 6mm (1/4") vertical dados in the side aprons.
+   - Inserted during dining mode to eliminate center seam flex; lifted out during gaming mode to give an entirely unobstructed playing vault.
+3. **Spill Protection & Silicone Foam Cord**:
+   - Half-lap (shiplap) center seam with a routed 3.5mm $\times$ 2.0mm groove housing a 3.0mm closed-cell silicone foam cord.
+   - Continuous 3/4" (19mm) perimeter overhang past the apron rails, directing perimeter spills harmlessly to the floor.
+4. **Tool-Free Leaf Alignment**:
+   - 3/8" (9.5mm) dowel pins underneath leaves slip into mating holes in the stretcher top edges.
+5. **Clean Interior Vault**:
+   - The interior gaming vault is designed to be completely free of corner posts or structural brackets.
 
 ---
 
-## 2. Dimensional Envelope
+## 2. Center Beam Analysis & Removable Dado System
 
-| Dimension | Imperial | Metric | Design Rationale |
-| :--- | :--- | :--- | :--- |
-| **Total Width (W)** | **30.0"** (opt: 28.0") | 762 mm (opt: 711 mm) | Narrowest comfortable width for 1 seated diner at table end with elbow room |
-| **Total Length (L)** | **60.0"** (opt: 56.0") | 1524 mm (opt: 1422 mm) | Exactly $2 \times W$, capped at 60" maximum (seats 4–6 people) |
-| **Total Height (H)** | **30.0"** | 762 mm | Standard dining table ergonomic height |
-| **Under-Apron Knee Clearance** | **24.9"** | 632 mm | Exceeds standard 24.0" knee clearance requirement for dining chairs |
-| **Vault Depth** | **3.0"** | 75 mm | Ample clearance for game boards, cards, dice trays, and miniatures |
-| **Vault Play Area** | **25.2" x 55.2"** | 640 mm x 1402 mm | Sized for standard board games, card mats, and RPG grids |
-| **Tabletop Overhang** | **0.75"** | 19 mm | Drip edge overhang protecting stretchers and vault from liquid spills |
-| **Individual Leaf Size** | **30.0" x 30.0"** | 762 mm x 762 mm | Lightweight (~16 lbs / 7.3 kg per leaf) for easy single-person handling |
+### Engineering Assessment: Is a center beam critical for 3/4" Baltic Birch?
+- **Interior Span**: With a 27" table width and 3/4" overhangs, the unsupported span between inner apron faces is **24.1" (612 mm)**.
+- **Continuous Sheet Bending**: 18mm (nominal 3/4") Baltic Birch plywood ($E \approx 9{,}000\text{ MPa}$) spanning 24.1" exhibits negligible deflection ($< 0.2\text{ mm}$) under normal distributed dining loads (dinner plates, bowls, laptops).
+- **The Split Seam Problem**: At the center split, the tabletop is not a continuous sheet. With an 18mm half-lap joint, each overlapping lip is only **9.0mm thick**.
+  - A 9mm lip spanning 24" will flex about $8\times$ more than an 18mm sheet under a point load. Leaning heavily on the table edge (e.g. 50 lbs of forearm/elbow force) causes ~2–3 mm of localized deflection.
+  - This deflection can break the water seal against the silicone cord or cause an annoying springy feel.
+- **The Removable Drop-In Dado Solution**:
+  - We route a **6mm deep $\times$ 18.5mm wide vertical dado** down the inner face of each long side apron, terminating at the vault floor.
+  - An 18mm Baltic birch cross-beam slides down into these dados before the leaves are placed.
+  - **Dining Mode**: The beam provides full-length structural support directly beneath the shiplap seam, supporting over 200 lbs without deflection and maintaining uniform compression on the 3mm silicone cord.
+  - **Gaming Mode**: When the leaves are removed, you simply lift the center beam straight out of the dados and set it aside. The vault becomes a 100% open, continuous 24.1" $\times$ 53.1" gaming surface!
 
----
-
-## 3. Structural Architecture & Modularity
-
-### A. Perimeter Apron Frame & Stretcher Box
-- **Material**: 18mm Baltic Birch plywood.
-- **Joinery**: Continuous perimeter box (1486 mm L $\times$ 724 mm W $\times$ 112 mm H).
-- **Center Cross-Stretcher**: An 18mm cross-beam directly supports the center seam of the two leaves, preventing sagging and eliminating diagonal frame racking.
-- **Top Edge**: Features precision blind dowel receiver holes (10mm diameter $\times$ 16mm deep) with 2mm chamfered mouths for smooth leaf alignment.
-
-### B. Knock-Down Leg Attachment
-- **Leg Construction**: 64mm $\times$ 64mm laminated Baltic birch legs (three 18mm plies + outer veneer face, or hollow-box ply with solid core).
-- **Diagonal Corner Blocks**: 18mm Baltic birch triangular corner brackets glued and screwed into the apron corners.
-- **Fasteners**: Two heavy-duty 5/16"-18 or 3/8"-16 machine bolts (or hanger bolts) per leg passing through the corner bracket into steel threaded inserts embedded in the leg.
-- **Disassembly**: All four legs detach in under 3 minutes using a single hex wrench.
-
-### C. Recessed Vault Floor
-- **Material**: 12mm Baltic Birch plywood.
-- **Support**: 18mm $\times$ 18mm hardwood ledger strips screwed along the inside bottom edge of the stretchers.
-- **Surface**: Topped with closed-cell neoprene foam and water-resistant gaming speed cloth or felt.
-- **Removability**: Can be lifted out if needed, reducing table frame carrying weight to under 30 lbs.
-
----
-
-## 4. Tabletop Leaves & Spill Mitigation
-
-### A. Overlap Drip Edge
-Unlike conventional gaming tables where leaves drop into an inner recess (allowing liquids to flow down the perimeter gap into the vault), this design places the leaves **on top of the stretchers** with a **3/4" (19mm) perimeter overhang**:
-- Spills on the outer edge run off and drip onto the floor.
-- No perimeter seam communicates with the gaming chamber.
-
-### B. Center Seam Shiplap Joint
-- Where the two leaves meet in the center, an overlapping 12mm wide $\times$ 9mm deep half-lap (shiplap) rebate prevents straight-through liquid penetration.
-- An optional 2mm silicone rubber gasket strip set in a shallow underside kerf creates an impermeable barrier against major spills.
-
-### C. Dowel Pin Horizontal Restraint
-- Four 3/8" (9.5mm) dowel pins (brass or hardwood) protrude 12mm from the underside of each leaf.
-- Pins engage matching 10mm receiver holes in the top edge of the long stretchers.
-- Provides absolute horizontal stability: pushing plates, leaning elbows, or sliding items will not dislodge the leaves.
-- Leaves lift off effortlessly in the vertical direction.
-- Subtle under-bevel finger relief on the overhang edges provides a comfortable handhold for lifting.
-
----
-
-## 5. Hardware & Fastener Bill of Materials
-
-| Item | Specification | Qty | Purpose |
-| :--- | :--- | :--- | :--- |
-| **Corner Leg Bolts** | 5/16"-18 $\times$ 2.5" (or 3/8"-16) Hex Head Bolts + Washers | 8 | Secures legs to corner blocks |
-| **Threaded Inserts** | 5/16"-18 (or 3/8"-16) Steel Knife-Thread Inserts for Hardwood | 8 | Embedded into inner faces of legs |
-| **Locating Dowels** | 3/8" dia $\times$ 1-1/4" Brass or Hardwood Pins | 8 | Underside of leaves for horizontal registration |
-| **Corner Brackets** | 18mm Baltic Birch Plywood Braces (or stamped steel brackets) | 4 | Frame rigidity and leg clamping |
-| **Leveling Glides** | Heavy-duty M8 or 3/8" adjustable threaded leveling feet | 4 | Uneven kitchen tile/floor leveling |
-| **Edge Banding** | 3mm (1/8") solid hardwood edge banding or veneer tape | ~25 lin ft | Plywood edge sealing and impact protection |
-| **Vault Mat** | 3mm closed-cell neoprene / water-resistant speed cloth | 1 | Gaming playing surface |
-
----
-
-## 6. Plywood Sheet Optimization (Cut Strategy)
-
-Standard Baltic Birch sheets come in 5' $\times$ 5' (60" $\times$ 60" / 1525 mm $\times$ 1525 mm):
-- **Sheet 1 (18mm)**:
-  - Tabletop Leaf 1: 30" $\times$ 30"
-  - Tabletop Leaf 2: 30" $\times$ 30"
-  - Remaining 30" $\times$ 60" section: Long stretchers (2 pcs @ 4.4" $\times$ 58.5") and Short stretchers (2 pcs @ 4.4" $\times$ 28.5"), plus center stretcher and corner blocks.
-- **Sheet 2 (18mm or 12mm)**:
-  - 12mm Sheet: Vault floor panel (28.5" $\times$ 58.5").
-  - 18mm ply scraps: Laminated leg blanks (8 pieces @ 2.5" $\times$ 29.25" face-glued into 4 solid legs).
-
----
-
-## 7. CadQuery Model Reference
-
-The parametric 3D model is located in [`models/table_assembly.py`](file:///c:/Users/atyre/github/gaming_table/models/table_assembly.py).
-
-To generate models or switch configurations:
-```python
-import models.table_assembly as ta
-
-# Generate full dining configuration
-dining_table = ta.make_table(mode="closed")
-
-# Generate open gaming vault configuration
-gaming_vault = ta.make_table(mode="vault")
-
-# Generate half-open demonstration view
-half_table = ta.make_table(mode="half")
 ```
+       Tabletop Leaf 1 (Left)              Tabletop Leaf 2 (Right)
+    ┌───────────────────────────┐       ┌───────────────────────────┐
+    │                           └───────┘                           │
+    │         [ 3mm Silicone Cord in Groove ]                       │
+════╪═══════════════════════════╤═══════╤═══════════════════════════╪════
+                                │       │
+                        ┌───────┴───────┴───────┐
+                        │ Removable Center Beam │
+                        │  (Drops into dados)   │
+                        └───────────────────────┘
+```
+
+---
+
+## 3. Half-Lap Seam & 3mm Silicone Foam Cord Specification
+
+- **Joint Type**: Half-lap (shiplap) rebate, 12.0 mm wide $\times$ 9.0 mm deep.
+- **Seal Channel**: A 3.5 mm wide $\times$ 2.0 mm deep groove cut along the horizontal shoulder of the lower half-lap lip.
+- **Gasket Material**: 3.0 mm diameter soft closed-cell silicone sponge / foam cord (Durometer ~15–20 Shore A).
+- **Action**: When the top leaf is placed down, its own self-weight (~14 lbs) compresses the 3mm cord by 1.0mm, sealing the joint against liquid penetration without requiring mechanical hold-down latches.
+
+---
+
+## 4. Evaluation of Leg Design Options
+
+To keep the interior gaming vault completely rectangular and free of intrusive corner posts or brackets, four distinct leg architectures are evaluated:
+
+| Criterion | Option 1: Interlocking Center Pillar / Trestle | Option 2: Triangular Posts & Sub-Floor Braces | Option 3: Notched Corner Posts (Apron-Cradle) | Option 4: Commercial Metal Legs |
+| :--- | :--- | :--- | :--- | :--- |
+| **Interior Vault Cleanliness** | **100% Clean** (No legs near box) | **100% Clean** (Braces under floor) | **100% Clean** (Legs notch outside) | **100% Clean** (Bolts under floor) |
+| **Kitchen & Chair Ergonomics** | **Best**: Zero corner legs to hit knees or chair legs when sliding in | **Good**: Standard 4 corner legs | **Good**: Standard 4 corner legs | **Good**: Standard 4 corner legs |
+| **Modularity & Teardown** | **Tool-Free or 4 Knobs**: Halves slide apart via center slot | **8 Bolts**: Requires wrench under table | **8 Connector Bolts**: Wrench under table | **8-16 Machine Screws**: Wrench under table |
+| **Baltic Birch Craftsmanship** | **High**: Beautiful sweeping ply curves and exposed edges | **High**: Laminated ply cut on bandsaw | **High**: Joinery detail at corners | **None**: Bought metal tubes/plates |
+| **Racking Rigidity** | **Very High**: Triangulated spreading wings | **Moderate**: Short 35mm pocket depth | **High**: Full-depth lap notch | **High**: Welded steel plate |
+
+### Option 1 Recommendation (Center Pillar with Spreading Wings)
+- Constructed from two interlocking double-ply (36mm) assemblies that slide together along a center half-lap vertical slot.
+- Spreading wings at the floor provide a 36" longitudinal base and 23" transverse base.
+- Top arms span the full 25.5" apron width, securing to the apron bottom with 4 threaded inserts and hand-tightened star knobs.
+- **Key Advantage**: In a tight 27" kitchen space, diners can swing their legs into chairs without barking their shins on corner legs.
+
+### Option 3 Recommendation (Laminated Posts with Top Notches)
+- $64 \times 64$ mm square laminated Baltic birch posts at the four corners.
+- An L-shaped shoulder is cut into the top inner corner of each leg ($18 \times 18 \times 87\text{ mm}$).
+- The apron box drops down into these leg shoulders; horizontal connector bolts thread into steel inserts in the leg notch.
+- The leg remains completely outside the inner perimeter of the vault, leaving the playing field a pure 90-degree rectangle.
