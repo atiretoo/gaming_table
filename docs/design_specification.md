@@ -1,83 +1,97 @@
-# Modular Dining & Gaming Table: Design Specification (Rev 2)
+# Modular Dining & Gaming Table: Design Specification (Rev 3)
 
-## 1. Project Overview & Updated Parameters
+## 1. Project Overview & Dimensions
 
-This specification defines a compact, modular dining table engineered specifically for small kitchens and apartments. It seamlessly transforms between a flat kitchen dining/work surface and a recessed board gaming vault.
-
-### Core Parameters (Updated)
-1. **Dimensions**: **27.0" (685.8 mm) Width $\times$ 56.0" (1422.4 mm) Length $\times$ 30.0" (762 mm) Total Height**.
-   - Optimized for narrow kitchen spaces while providing standard 27" place settings for one diner at each end and two diners along each side (seating 4–6).
-2. **Removable Center Support Beam**:
-   - 18mm Baltic birch beam that drops into shallow 6mm (1/4") vertical dados in the side aprons.
-   - Inserted during dining mode to eliminate center seam flex; lifted out during gaming mode to give an entirely unobstructed playing vault.
-3. **Spill Protection & Silicone Foam Cord**:
-   - Half-lap (shiplap) center seam with a routed 3.5mm $\times$ 2.0mm groove housing a 3.0mm closed-cell silicone foam cord.
-   - Continuous 3/4" (19mm) perimeter overhang past the apron rails, directing perimeter spills harmlessly to the floor.
-4. **Tool-Free Leaf Alignment**:
-   - 3/8" (9.5mm) dowel pins underneath leaves slip into mating holes in the stretcher top edges.
-5. **Clean Interior Vault**:
-   - The interior gaming vault is designed to be completely free of corner posts or structural brackets.
+- **Total Dimensions**: **27.0" (685.8 mm) Width $\times$ 56.0" (1422.4 mm) Length $\times$ 30.0" (762 mm) Height**.
+- **Dining Capacity**: 4 to 6 people (1 at each short end, 2 along each long side).
+- **Gaming Vault**: **24.1" $\times$ 53.1" (612 $\times$ 1348 mm)** playing field, 3.0" (75 mm) recessed depth.
+- **Under-Apron Knee Clearance**: **24.9" (632 mm)** clear height from floor to underside of aprons across the entire perimeter.
+- **Top Overhang**: **3/4" (19 mm)** perimeter drip edge shielding stretchers and vault from liquid spills.
+- **Center Seam Gasket**: Half-lap shiplap rebate with 3.5mm $\times$ 2.0mm groove housing a 3.0mm closed-cell silicone foam cord.
+- **Removable Center Beam**: 18mm Baltic birch beam dropping into 6mm vertical dados in side aprons.
 
 ---
 
-## 2. Center Beam Analysis & Removable Dado System
+## 2. Leg Architecture & Ergonomic Comparison
 
-### Engineering Assessment: Is a center beam critical for 3/4" Baltic Birch?
-- **Interior Span**: With a 27" table width and 3/4" overhangs, the unsupported span between inner apron faces is **24.1" (612 mm)**.
-- **Continuous Sheet Bending**: 18mm (nominal 3/4") Baltic Birch plywood ($E \approx 9{,}000\text{ MPa}$) spanning 24.1" exhibits negligible deflection ($< 0.2\text{ mm}$) under normal distributed dining loads (dinner plates, bowls, laptops).
-- **The Split Seam Problem**: At the center split, the tabletop is not a continuous sheet. With an 18mm half-lap joint, each overlapping lip is only **9.0mm thick**.
-  - A 9mm lip spanning 24" will flex about $8\times$ more than an 18mm sheet under a point load. Leaning heavily on the table edge (e.g. 50 lbs of forearm/elbow force) causes ~2–3 mm of localized deflection.
-  - This deflection can break the water seal against the silicone cord or cause an annoying springy feel.
-- **The Removable Drop-In Dado Solution**:
-  - We route a **6mm deep $\times$ 18.5mm wide vertical dado** down the inner face of each long side apron, terminating at the vault floor.
-  - An 18mm Baltic birch cross-beam slides down into these dados before the leaves are placed.
-  - **Dining Mode**: The beam provides full-length structural support directly beneath the shiplap seam, supporting over 200 lbs without deflection and maintaining uniform compression on the 3mm silicone cord.
-  - **Gaming Mode**: When the leaves are removed, you simply lift the center beam straight out of the dados and set it aside. The vault becomes a 100% open, continuous 24.1" $\times$ 53.1" gaming surface!
+### A. Clarification on Option 3 Visuals ("Center Cross Brace")
+In the isometric 3D render of Option 3, a small rectangular shape appeared beneath the center of the long apron rail.
+- **Engineering Clarification**: There is **no center cross brace** below the apron box. The underside of the table between the corner legs is completely open.
+- In 30° isometric projection, the bottom foot of the **far back-left corner leg** happens to align directly behind the center of the front apron rail, causing the very tip of that 4th leg to show beneath the front apron. Front and right orthographic views confirm 100% unobstructed clearance.
+
+---
+
+### B. Option 1 (Center Pillar) vs. Option 3 (Notched Corner Posts) Ergonomic Analysis
+
+#### Option 1: Center Pillar / Trestle Wing Depth & Chair Conflict
+- **Table Half-Length**: Center to short end = **28.0" (711 mm)**.
+- **Chair Tuck-In Requirement**: A standard dining chair with an 18" deep seat requires **18.0" (457 mm)** of unobstructed depth from the table edge to slide all the way in when not in use.
+- **Clearance Remaining**: $28.0" - 18.0" = \mathbf{10.0"}$ from table center.
+- **Ergonomic Issue**:
+  1. For a center pedestal to provide adequate longitudinal tip resistance on a 56" table, its base wings must span at least 32" to 36" (extending 16" to 18" from center).
+  2. This causes the spreading wings to project directly into the chair tuck-in envelope, stopping an 18" chair about **6" to 8" short** of sliding fully under the table.
+  3. More critically, when someone sits at the short end, their knees and feet project 12" to 15" under the table, colliding directly with the diagonal slope of the longitudinal wing.
+  4. Furthermore, because a center pillar only supports the middle of the table, the 18" cantilevers on both ends require stiffening stringers beneath the vault floor, which further cuts into knee clearance.
+
+#### Option 3: Notched Corner Posts (The Ergonomic Winner)
+- **Short-End Chair Opening**:
+  $$\text{Clear Opening} = 27.0" - 2(0.75" \text{ overhang}) - 2(2.5" \text{ legs}) = \mathbf{20.5" (520 mm)}$$
+  An 18" wide dining chair slides **completely between the legs and all the way under the table** on the short ends!
+- **Long-Side Chair Opening**:
+  $$\text{Clear Opening} = 56.0" - 2(0.75" \text{ overhang}) - 2(2.5" \text{ legs}) = \mathbf{49.5" (1257 mm)}$$
+  Two 18" chairs slide side-by-side with 13.5" of extra lateral breathing room.
+- **100% Clean Gaming Vault**: Because the legs notch around the *outside* of the apron box, the interior playing vault is a pure, flat, continuous rectangle with zero posts or brackets inside.
+- **Zero Cantilever**: The table frame is supported directly at all four corners, providing maximum structural rigidity with no flexing ends.
+
+---
+
+## 3. Fabrication Innovation: Pre-Lamination Notched Legs
+
+Instead of gluing up solid $64 \times 64\text{ mm}$ ($2.5" \times 2.5"$) blanks and then attempting to cut deep 87mm (3.4") multi-axis L-shaped rabbets with a router or bandsaw, **the notches are fabricated into the individual plies prior to glue-up**.
+
+### Laminate Ply Stackup (3 Plies of 18mm Baltic Birch + Face Veneers):
+Assume each leg is composed of three 18mm plies (total thickness = 54mm, brought to 60–64mm with hardwood facing strips or edge banding):
 
 ```
-       Tabletop Leaf 1 (Left)              Tabletop Leaf 2 (Right)
-    ┌───────────────────────────┐       ┌───────────────────────────┐
-    │                           └───────┘                           │
-    │         [ 3mm Silicone Cord in Groove ]                       │
-════╪═══════════════════════════╤═══════╤═══════════════════════════╪════
-                                │       │
-                        ┌───────┴───────┴───────┐
-                        │ Removable Center Beam │
-                        │  (Drops into dados)   │
-                        └───────────────────────┘
+       PLY 1 (Outer Face)            PLY 2 (Middle Ply)            PLY 3 (Inner Corner)
+    ┌──────────────────────┐      ┌──────────────────────┐      ┌──────────────────────┐
+    │                      │      │                      │      │                      │
+    │                      │      │   Notched Step       │      │   Cut 87mm Shorter   │
+    │                      │      │   (18mm x 87mm)      │      │   (Entire Top Off)   │
+    │   Full Length        │      │   ┌────────┐         │      │                      │
+    │   (744 mm)           │      │   │        │         │      │                      │
+    │                      │      │   │        │         │      │                      │
+    │                      │      │   └────────┴─────────┤      │                      │
+    │                      │      │                      │      ├──────────────────────┤
+    │                      │      │                      │      │                      │
+    │                      │      │                      │      │                      │
+    │                      │      │                      │      │                      │
+    │                      │      │                      │      │                      │
+    └──────────────────────┘      └──────────────────────┘      └──────────────────────┘
+               │                             │                             │
+               └─────────────────────────────┼─────────────────────────────┘
+                                             ▼
+                                  GLUE-UP UNDER CLAMPS
+                                             ▼
+                               Perfect 90° Finished Notch!
 ```
 
+### Manufacturing Steps:
+1. **Ply 3 (Inner Corner)**: Rip to width, cross-cut to length $744 - 87 = \mathbf{657\text{ mm}}$ (omits the entire top notch area).
+2. **Ply 2 (Middle Layer)**: Cut an $18\text{ mm} \times 87\text{ mm}$ step on the table saw or bandsaw before glue-up.
+3. **Ply 1 (Outer Corner)**: Keep at full length ($744\text{ mm}$).
+4. **Pre-Drilling**: Drill the horizontal connector bolt clearance holes through Ply 2 and Ply 1 on a drill press before assembly for guaranteed perpendicular alignment.
+5. **Lamination**: Glue the plies together using alignment pins or dowels in scrap areas.
+6. **Result**:
+   - Razor-sharp, perfectly square internal corners with **zero chisel clean-out**.
+   - No router bit radius to square off.
+   - Immense structural shear strength across the glue joints.
+
 ---
 
-## 3. Half-Lap Seam & 3mm Silicone Foam Cord Specification
+## 4. Hardware & Assembly Protocol for Option 3
 
-- **Joint Type**: Half-lap (shiplap) rebate, 12.0 mm wide $\times$ 9.0 mm deep.
-- **Seal Channel**: A 3.5 mm wide $\times$ 2.0 mm deep groove cut along the horizontal shoulder of the lower half-lap lip.
-- **Gasket Material**: 3.0 mm diameter soft closed-cell silicone sponge / foam cord (Durometer ~15–20 Shore A).
-- **Action**: When the top leaf is placed down, its own self-weight (~14 lbs) compresses the 3mm cord by 1.0mm, sealing the joint against liquid penetration without requiring mechanical hold-down latches.
-
----
-
-## 4. Evaluation of Leg Design Options
-
-To keep the interior gaming vault completely rectangular and free of intrusive corner posts or brackets, four distinct leg architectures are evaluated:
-
-| Criterion | Option 1: Interlocking Center Pillar / Trestle | Option 2: Triangular Posts & Sub-Floor Braces | Option 3: Notched Corner Posts (Apron-Cradle) | Option 4: Commercial Metal Legs |
-| :--- | :--- | :--- | :--- | :--- |
-| **Interior Vault Cleanliness** | **100% Clean** (No legs near box) | **100% Clean** (Braces under floor) | **100% Clean** (Legs notch outside) | **100% Clean** (Bolts under floor) |
-| **Kitchen & Chair Ergonomics** | **Best**: Zero corner legs to hit knees or chair legs when sliding in | **Good**: Standard 4 corner legs | **Good**: Standard 4 corner legs | **Good**: Standard 4 corner legs |
-| **Modularity & Teardown** | **Tool-Free or 4 Knobs**: Halves slide apart via center slot | **8 Bolts**: Requires wrench under table | **8 Connector Bolts**: Wrench under table | **8-16 Machine Screws**: Wrench under table |
-| **Baltic Birch Craftsmanship** | **High**: Beautiful sweeping ply curves and exposed edges | **High**: Laminated ply cut on bandsaw | **High**: Joinery detail at corners | **None**: Bought metal tubes/plates |
-| **Racking Rigidity** | **Very High**: Triangulated spreading wings | **Moderate**: Short 35mm pocket depth | **High**: Full-depth lap notch | **High**: Welded steel plate |
-
-### Option 1 Recommendation (Center Pillar with Spreading Wings)
-- Constructed from two interlocking double-ply (36mm) assemblies that slide together along a center half-lap vertical slot.
-- Spreading wings at the floor provide a 36" longitudinal base and 23" transverse base.
-- Top arms span the full 25.5" apron width, securing to the apron bottom with 4 threaded inserts and hand-tightened star knobs.
-- **Key Advantage**: In a tight 27" kitchen space, diners can swing their legs into chairs without barking their shins on corner legs.
-
-### Option 3 Recommendation (Laminated Posts with Top Notches)
-- $64 \times 64$ mm square laminated Baltic birch posts at the four corners.
-- An L-shaped shoulder is cut into the top inner corner of each leg ($18 \times 18 \times 87\text{ mm}$).
-- The apron box drops down into these leg shoulders; horizontal connector bolts thread into steel inserts in the leg notch.
-- The leg remains completely outside the inner perimeter of the vault, leaving the playing field a pure 90-degree rectangle.
+- **Leg-to-Apron Fasteners**: Low-profile 1/4"-20 or 5/16"-18 decorative black hex/socket connector bolts (e.g. Joint Connector Bolts / JCB).
+- **Inserts**: Steel knife-thread inserts installed into the inner shoulder faces of the legs.
+- **Apron Holes**: Drilled through the 18mm apron walls.
+- **Teardown**: Remove 2 connector bolts per leg (8 bolts total) from inside the apron or underneath. The legs lift away cleanly, packing flat alongside the apron frame, vault floor, and two tabletop leaves.
