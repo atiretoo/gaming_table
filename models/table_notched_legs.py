@@ -60,16 +60,13 @@ def make_notched_legs():
     The apron box rests down into the notch.
     The leg never enters the interior of the vault.
     """
-    # Base leg
     leg = (
         cq.Workplane("XY")
         .box(LEG_SIZE, LEG_SIZE, LEG_H)
         .translate((0, 0, LEG_H / 2.0))
     )
     
-    # We cut a top notch into the inner corner of the leg
-    # Let's define notch in local coords for +X, +Y corner leg:
-    # Inner corner is at -X, -Y in local coords of the leg
+    # Inner corner notch
     notch = (
         cq.Workplane("XY")
         .box(PLY_18 + 0.5, PLY_18 + 0.5, APRON_H + 1.0)
@@ -93,22 +90,43 @@ def make_notched_legs():
     return leg_ne.union(leg_nw).union(leg_se).union(leg_sw)
 
 
-def make_half_table():
+def make_table(mode="closed"):
+    """
+    Generates table in specified mode:
+    - 'closed': Dining mode with both leaves in place (with center seam line)
+    - 'half': Transition mode (one leaf in place, one removed)
+    - 'vault': Gaming mode (both leaves removed)
+    """
     box = make_clean_apron_and_vault()
     legs = make_notched_legs()
+    base = box.union(legs)
     
-    # Add left tabletop leaf
     leaf_w = TABLE_WIDTH
-    leaf_l = TABLE_LENGTH / 2.0
     z_top = APRON_TOP_Z + PLY_18 / 2.0
+    gap = 1.0  # 1mm visual gap to render the center seam cleanly
+    leaf_l = (TABLE_LENGTH - gap) / 2.0
     
-    leaf_left = (
-        cq.Workplane("XY")
-        .box(leaf_l, leaf_w, PLY_18)
-        .translate((-leaf_l / 2.0, 0, z_top))
-    )
-    
-    return box.union(legs).union(leaf_left)
+    if mode == "closed":
+        leaf_left = (
+            cq.Workplane("XY")
+            .box(leaf_l, leaf_w, PLY_18)
+            .translate((-(leaf_l + gap) / 2.0, 0, z_top))
+        )
+        leaf_right = (
+            cq.Workplane("XY")
+            .box(leaf_l, leaf_w, PLY_18)
+            .translate(((leaf_l + gap) / 2.0, 0, z_top))
+        )
+        return base.union(leaf_left).union(leaf_right)
+    elif mode == "half":
+        leaf_left = (
+            cq.Workplane("XY")
+            .box(TABLE_LENGTH / 2.0, leaf_w, PLY_18)
+            .translate((-TABLE_LENGTH / 4.0, 0, z_top))
+        )
+        return base.union(leaf_left)
+    else:  # "vault"
+        return base
 
 
-result = make_half_table()
+result = make_table(mode="closed")
