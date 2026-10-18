@@ -1,16 +1,18 @@
-# Bill of Materials (BoM) & Cut List: Modular Gaming Table (Rev 6)
+# Bill of Materials (BoM) & Cut List: Modular Gaming Table (Rev 7)
 
 **Table Envelope**: 27.0" (685.8 mm) Width $\times$ 56.0" (1422.4 mm) Length $\times$ 30.0" (762 mm) Total Height  
-**Design**: Option 3 Final (Recessed Notched Corner Legs, Floating Leaf Chamfers, Outside Accessory Track)  
+**Design**: Option 3 Final (Recessed Base, Floating Leaf Chamfers, Tapered Legs, Outside Accessory Track)  
 **Finish**: Natural Baltic Birch Plywood with De-waxed Shellac (No Edge Banding, No Veneer)  
 
 ---
 
-## 1. Dimensional Summary
+## 1. Dimensional & Architectural Summary
 
 - **Tabletop Leaves**: 27.0" $\times$ 56.0" (Two pieces @ 27.0" $\times$ 28.5" with 12 mm half-lap seam).
 - **Underside Chamfer**: 12 mm $\times$ 45° reverse chamfer around outer perimeter (creates floating top & finger lift).
-- **Leg Recess**: Legs are tucked 18 mm (0.71") inside the outer leaf edges.
+- **Leg Geometry**:
+  - $54 \times 54$ mm at apron shoulder; outer faces plumb with 45° miter.
+  - **Two inner faces tapered** from $Z = 657\text{ mm}$ down to $Z = 0$, ending at a slender $34 \times 34$ mm foot.
 - **Apron Box**: 22.75" (577.8 mm) Width $\times$ 51.75" (1314.4 mm) Length $\times$ 3.43" (87 mm) Height.
 - **Gaming Vault Play Area**: 21.33" (541.8 mm) Width $\times$ 50.33" (1278.4 mm) Length $\times$ 3.0" (75 mm) Depth.
 - **Apron Top Rim**: 9 mm fillet on outer top edge; 2.5 mm chamfer on inner top edge (forearm comfort).
@@ -39,15 +41,17 @@
 
 ---
 
-### C. Mitered Corner Legs (18 mm Baltic Birch - Sheet 1)
-*54x54mm finished square leg with seamless 45° mitered outside corner.*
+### C. Mitered Corner Legs with Inner Tapers (18 mm Baltic Birch - Sheet 1)
+*54x54mm finished square at top, inner 2 faces tapered to 34x34mm at floor.*
 
 | Part # | Description | Qty | Thickness | Width | Length | Notes / Joinery Details |
 | :---: | :--- | :---: | :---: | :---: | :---: | :--- |
-| **LEG-A** | Outer Mitered Ply (Face 1) | 4 | 18 mm | 2.13" (54.0 mm) | 29.29" (744.0 mm) | Full height; one long edge cut at **45° bevel miter** |
-| **LEG-B** | Outer Mitered Ply (Face 2) | 4 | 18 mm | 2.13" (54.0 mm) | 29.29" (744.0 mm) | Full height; one long edge cut at **45° bevel miter** |
-| **LEG-C** | Inner Core Ply 1 | 4 | 18 mm | 1.42" (36.0 mm) | 25.87" (657.0 mm) | Cut **3.43" (87 mm) shorter** to form shoulder notch |
-| **LEG-D** | Inner Core Ply 2 | 4 | 18 mm | 0.71" (18.0 mm) | 25.87" (657.0 mm) | Cut **3.43" (87 mm) shorter** to form shoulder notch |
+| **LEG-A** | Outer Mitered Ply (Face 1) | 4 | 18 mm | 2.13" (54.0 mm) | 29.29" (744.0 mm) | Full height; one long edge cut at **45° bevel miter**; stays plumb |
+| **LEG-B** | Outer Mitered Ply (Face 2) | 4 | 18 mm | 2.13" (54.0 mm) | 29.29" (744.0 mm) | Full height; one long edge cut at **45° bevel miter**; stays plumb |
+| **LEG-C** | Inner Core Ply 1 | 4 | 18 mm | 1.42" (36.0 mm) | 25.87" (657.0 mm) | Cut **3.43" (87 mm) shorter** for shoulder; tapered on inner face |
+| **LEG-D** | Inner Core Ply 2 | 4 | 18 mm | 0.71" (18.0 mm) | 25.87" (657.0 mm) | Cut **3.43" (87 mm) shorter** for shoulder; tapered on inner face |
+
+*Tip: Cut the 2-face taper on a table saw taper jig after the leg blank is glued and dried.*
 
 ---
 
@@ -69,3 +73,17 @@
 | **H5** | Adjustable Leveling Feet | Heavy-duty M8 or 1/4"-20 Threaded Glides + T-Nuts | **4** | Recessed into leg bottoms for floor leveling |
 | **H6** | Ledger Assembly Screws | #8 $\times$ 1-1/4" Flat Head Wood Screws | **24** | Fastens ledger cleats to apron rails |
 | **H7** | Wood Glue | Titebond II or III Wood Glue (16 oz) | **1** | Mitered leg glue-up and apron frame assembly |
+
+---
+
+## 4. 3D Printed Prototype Test Files
+
+Located in [`models/3d_print/`](file:///c:/Users/atyre/github/gaming_table/models/3d_print):
+- **`t_slot_coupon.stl`**: 75 mm $\times$ 60 mm $\times$ 18 mm test block with the exact T-slot channel and mounting screw counterbores.
+- **`gravity_hook_clip.stl`**: Functional test clip with gravity hook, fulcrum pad, and integrated card-holding ledge.
+
+**Recommended Print Settings**:
+- Layer Height: 0.20 mm
+- Perimeters / Walls: 4 walls (for rigidity)
+- Infill: 20–25% Gyroid or Grid (PETG or PLA)
+- Supports: None needed (designed with self-supporting 45° overhangs)
